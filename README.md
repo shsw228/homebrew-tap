@@ -7,12 +7,14 @@
 ```bash
 brew tap shsw228/tap
 brew install --cask vpn-mierukun
+xattr -dr com.apple.quarantine /Applications/VPN-Mierukun.app
 ```
 
 または:
 
 ```bash
 brew install --cask shsw228/tap/vpn-mierukun
+xattr -dr com.apple.quarantine /Applications/VPN-Mierukun.app
 ```
 
 ## 管理対象
