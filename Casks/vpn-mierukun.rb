@@ -2,10 +2,10 @@
 # frozen_string_literal: true
 
 cask "vpn-mierukun" do
-  version "0.1.0"
-  sha256 "6e12a4ec081bab5079f33fba369b3c5c0199a2ed72ded57bb15d5fe660b24c9c"
+  version "0.1.3"
+  sha256 "fb6ca59a4e75d929a40eb8cc383242c4166505c410aff63a969fe45a69f40665"
 
-  url "https://github.com/shsw228/VPN-Mierukun/releases/download/v0.1.0/VPN-Mierukun-#{version}.zip"
+  url "https://github.com/shsw228/VPN-Mierukun/releases/download/v0.1.3/VPN-Mierukun-#{version}.zip"
   name "VPN-Mierukun"
   desc "Visualize VPN connection status with a screen-edge overlay"
   homepage "https://github.com/shsw228/VPN-Mierukun"
