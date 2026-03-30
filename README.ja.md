@@ -1,10 +1,10 @@
 # homebrew-tap
 
-[日本語](README.ja.md)
+[English](README.md)
 
-This tap distributes `VPN-Mierukun` as a Homebrew Cask.
+`VPN-Mierukun` を Homebrew Cask で配布するための tap です。
 
-## Install
+## インストール
 
 ```bash
 brew tap shsw228/tap
@@ -12,15 +12,15 @@ brew install --cask vpn-mierukun
 xattr -dr com.apple.quarantine /Applications/VPN-Mierukun.app
 ```
 
-Or:
+または:
 
 ```bash
 brew install --cask shsw228/tap/vpn-mierukun
 xattr -dr com.apple.quarantine /Applications/VPN-Mierukun.app
 ```
 
-## Managed Files
+## 管理対象
 
 - `Casks/vpn-mierukun.rb`
 
-This tap is intended to be updated from the release workflow in `shsw228/VPN-Mierukun`.
+この tap は `shsw228/VPN-Mierukun` 側の release workflow から更新する想定です。
