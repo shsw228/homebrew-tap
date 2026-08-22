@@ -18,9 +18,10 @@ cask "yashiki-fork" do
   desc "Tiling window manager with display events and per-display gaps"
   homepage "https://github.com/shsw228/yashiki"
 
-  # Apple Silicon 専用でビルドしている
+  # Apple Silicon 専用でビルドしている。macOS 側の下限は app の
+  # LSMinimumSystemVersion (11.0) に合わせる。
   depends_on arch: :arm64
-  depends_on macos: :sequoia
+  depends_on macos: ">= :big_sur"
 
   app "Yashiki-fork.app"
   binary "#{appdir}/Yashiki-fork.app/Contents/MacOS/yashiki"
