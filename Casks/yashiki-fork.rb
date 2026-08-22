@@ -10,8 +10,8 @@
 #
 # version は <上流 version>.<ビルド番号>。同じ上流版を作り直しても単調増加する。
 cask "yashiki-fork" do
-  version "0.15.2.2"
-  sha256 "f623f9b4f7a73b3bcabff4dadc9cf560d7a3f27b94dec8f21811f9c58a6bbd58"
+  version "0.15.2.3"
+  sha256 "1fa324ba970bfd8afce01bb21a4da14114bfeafd06110fc26072bdfbccba57e6"
 
   url "https://github.com/shsw228/yashiki/releases/download/fork-v#{version}/Yashiki-fork-arm64-#{version}.zip"
   name "Yashiki-fork"
