@@ -29,10 +29,10 @@ cask "yashiki-fork" do
   binary "#{appdir}/Yashiki-fork.app/Contents/Resources/layouts/yashiki-layout-byobu"
   zsh_completion "completions/zsh/_yashiki"
 
-  # daemon は LaunchAgent (com.shsw228.yashiki) で上げている前提。
-  # 入れ替え時に掴んだままにならないよう、両方止める。
-  uninstall launchctl: "com.shsw228.yashiki",
-            quit:      "dev.typester.yashiki.fork"
+  # LaunchAgent (com.shsw228.yashiki) は dotfiles が管理しているので触らない。
+  # uninstall launchctl: を書くと Homebrew が plist ごと削除し、upgrade のたびに
+  # 自動起動の設定が消える (実際に踏んだ)。ここでは走っている app を止めるだけ。
+  uninstall quit: "dev.typester.yashiki.fork"
 
   zap trash: [
     "~/.cache/yashiki",
