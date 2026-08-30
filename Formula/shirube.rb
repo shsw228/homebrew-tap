@@ -6,28 +6,28 @@
 class Shirube < Formula
   desc "Terminal directory jumper that keeps directories in named groups"
   homepage "https://github.com/shsw228/shirube"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/shsw228/shirube/releases/download/v#{version}/shirube-aarch64-apple-darwin.tar.gz"
-      sha256 "b9c3e374db4ed9622fbdf3f7d9098e7f88590df154fa63f817c5cd7cb4b2c3b1"
+      sha256 "772bffd31cbfdcf40a45e95334e0c2bcc082622616c3796b14d11896fe2352ad"
     end
     on_intel do
       url "https://github.com/shsw228/shirube/releases/download/v#{version}/shirube-x86_64-apple-darwin.tar.gz"
-      sha256 "ea3bb3d6063dda166b0b0cd732e9ef9c957aeb071b97dc849b3427b3d05f7328"
+      sha256 "1e291f599b19572acb65b6fa546fb8ff2ec24e6f96e8cc76f3c4bf0beb61aa6c"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/shsw228/shirube/releases/download/v#{version}/shirube-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "489822944e385fbc1df67fe047878c4156ef92eb95f227c5c0f5fba293d10e5f"
+      sha256 "83668aef7eb2969917610e0adb5998e56eb677c8310ad1a2f76c3f6411ee6190"
     end
     on_intel do
       url "https://github.com/shsw228/shirube/releases/download/v#{version}/shirube-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "96e226365d49cdbe4096f14d15919949f9834859f6450e18cd4d7436a9b23e46"
+      sha256 "3d09c5d2b4c3070b664fe67edd83da79ec97bffd6ce88d2a45b84d2e28d19796"
     end
   end
 
